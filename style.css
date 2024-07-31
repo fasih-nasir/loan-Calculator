@@ -2,11 +2,11 @@ button,input{
         cursor: grabbing;
     }
     body{
-        background-color: rgba(0, 0, 0, 0.114);
+        background-color: rgba(0, 0, 0, 0.114) !important;;
         margin: 0px;
         padding: 0px;
         text-transform:capitalize;
-        font-family: "Montserrat", sans-serif;
+        font-family: "Montserrat", sans-serif !important;;
         font-weight: 400 !important;
     }
   .cantop{
