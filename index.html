@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Loan Calculator</title>
+    <title>Hello, world!</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +13,80 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+<style>
+    button,input{
+        cursor: grabbing;
+    }
+    body{
+        background-color: rgba(0, 0, 0, 0.114) !important;
+        margin: 0px;
+        padding: 0px;
+        text-transform:capitalize;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400 !important;
+    }
+  .cantop{
+    position: fixed ;
+    top: 0px;
+    background-color: black;
+    color: white;
+    margin: 3px;
+    font-size: 22px;
+    padding: 3px 16px;
+    border-radius: 50px;
+  }
+  .container>div>div{
+    color: rgb(122, 112, 112) !important;
+margin: 10px 0px !important;
+border-radius: 9px !important;
+padding: 5px 10px !important;
+    background-color: white !important;
+  }
+ input{border-radius: 5px !important;
+    margin: 10px 0px !important;   cursor: grabbing !important;
+    padding: 10px !important;
+    color: rgb(122, 112, 112) !important;
+    border: 1px solid  rgb(212, 212, 212) !important;;
+  }
+  select{      cursor: grabbing; border: 1px solid  rgb(212, 212, 212);;
+    margin: 10px 0px;    color: rgb(122, 112, 112);
+    padding: 10px;border-radius: 5px;
+  }
+  select:focus{   cursor: grabbing;
+    outline: none;    color: rgb(122, 112, 112);
+    border: 1px solid  rgb(115, 115, 115);;;
+  }
+  input:focus{   cursor: grabbing;
+    color: rgb(122, 112, 112);
+    outline: none;
+    border: 1px solid  rgb(115, 115, 115);;;
+  }
+  h4{
+    font-size: 22px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 6px;
+    color: rgb(122, 112, 112);
+    /* background-color: rgb(232, 230, 230); */
+  }
+  h2{
+width: 50%;
+border-radius: 4px;
+    padding: 5px;
+        color: rgb(137, 136, 136);
+    /* background-color: rgba(88, 103, 97, 0); */
+  }
+  h3{
+    color: rgb(81, 81, 81);
+  }
+  button{   cursor: grabbing;
+   border: none;
+    background-color:  rgb(81, 81, 81);;
+    color: white;
+    margin: 10px 0px;
+    padding: 10px 30px !important;
+  }
+</style>
 </head>
   <body>
     <!-- <a class="btn cantop" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -113,7 +186,54 @@
     </div>
    </div>
 </div>
-  
+   <script>
+    document.getElementById("d1").style.opacity="0"
+    document.getElementById("apply").addEventListener("click",()=>{
+        var amount=document.getElementById("amount").value
+        var rate=document.getElementById("rate").value
+        var sel1=document.getElementById("sel1").value
+        // document.getElementById("sel1").value;
+        document.getElementById("type").value=sel1
+        var sel2=document.getElementById("sel2").value
+        if (amount && rate && sel1 && sel2) {
+                document.getElementById("d1").style.opacity="1"
+        }
+if(sel2 === "6"){
+    var ans=amount /6;
+    var ans1=amount * rate/100;
+    // var res=ans1
+    document.getElementById("monthpay").value=ans.toFixed(1) 
+        document.getElementById("pa").value=" 6 Months"
+    document.getElementById("intpay").value=ans1.toFixed(1)
+
+}
+if(sel2 === "1"){
+    var ans=amount /12;
+    var ans1=amount * rate/100;
+    document.getElementById("monthpay").value=ans.toFixed(1) 
+            document.getElementById("pa").value=" 1 Years"
+    document.getElementById("intpay").value=ans1.toFixed(1)
+
+}
+if(sel2 === "2"){
+    var ans=amount /24;
+    var ans1=amount * rate/100;
+    document.getElementById("monthpay").value=ans.toFixed(1)
+      document.getElementById("pa").value=" 2 Years"
+    document.getElementById("intpay").value=ans1.toFixed(1)
+
+}
+if(sel2 === "3"){
+    var ans=amount /24;
+    var ans1=amount * rate/100;
+    document.getElementById("monthpay").value=ans.toFixed(1) 
+      document.getElementById("pa").value=" 3 Years"
+    document.getElementById("intpay").value=ans1.toFixed(1)
+
+}
+
+})
+   </script>
    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
