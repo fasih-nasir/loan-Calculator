@@ -36,8 +36,10 @@ To use the calculator, simply input the required values and click the "Calculate
 - **Loan Type:** Choose the type of loan (e.g., Home Loan, Car Loan, Personal Loan).
 - **Loan Duration:** Select the duration of the loan (e.g., 6 Months, 1 Year, 2 Years, 3 Years).
 ## Fill This Feild
-![image](https://github.com/user-attachments/assets/c2814afb-00f2-4ea5-a13c-696b88f08d0a)
+![image](https://github.com/user-attachments/assets/d4924535-a345-40ba-bfcc-e50c9f2faab5)
+
 ### Results
+![image](https://github.com/user-attachments/assets/81bf8aa9-a663-4639-8ce1-3c8dbbc47b87)
 
 Once the form is filled out and the "Calculate" button is clicked, the results will be displayed, including the loan type, monthly payment, loan duration, and interest payment.
 
