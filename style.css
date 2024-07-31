@@ -1,16 +1,16 @@
-button,input{
+    button,input{
         cursor: grabbing;
     }
     body{
-        background-color: rgba(0, 0, 0, 0.114) !important;;
+        background-color: rgba(0, 0, 0, 0.114) !important;
         margin: 0px;
         padding: 0px;
         text-transform:capitalize;
-        font-family: "Montserrat", sans-serif !important;;
+        font-family: "Montserrat", sans-serif;
         font-weight: 400 !important;
     }
   .cantop{
-    position: fixed;
+    position: fixed ;
     top: 0px;
     background-color: black;
     color: white;
@@ -20,17 +20,17 @@ button,input{
     border-radius: 50px;
   }
   .container>div>div{
-    color: rgb(122, 112, 112);
-margin: 10px 0px;
-border-radius: 9px;
-padding: 5px 10px;
-    background-color: white;
+    color: rgb(122, 112, 112) !important;
+margin: 10px 0px !important;
+border-radius: 9px !important;
+padding: 5px 10px !important;
+    background-color: white !important;
   }
-  button , input{border-radius: 5px;
-    margin: 10px 0px;   cursor: grabbing;
-    padding: 10px;
-    color: rgb(122, 112, 112);
-    border: 1px solid  rgb(212, 212, 212);;
+ input{border-radius: 5px !important;
+    margin: 10px 0px !important;   cursor: grabbing !important;
+    padding: 10px !important;
+    color: rgb(122, 112, 112) !important;
+    border: 1px solid  rgb(212, 212, 212) !important;;
   }
   select{      cursor: grabbing; border: 1px solid  rgb(212, 212, 212);;
     margin: 10px 0px;    color: rgb(122, 112, 112);
@@ -64,7 +64,9 @@ border-radius: 4px;
     color: rgb(81, 81, 81);
   }
   button{   cursor: grabbing;
+   border: none;
     background-color:  rgb(81, 81, 81);;
     color: white;
-    padding: 10px 20px;
+    margin: 10px 0px;
+    padding: 10px 30px !important;
   }
