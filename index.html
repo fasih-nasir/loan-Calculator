@@ -202,6 +202,9 @@ border-radius: 4px;
     <option value="1" >1 Year</option>
     <option value="2" >2 Year</option>
     <option value="3" >3 Year</option>
+    <option value="4" >4 Year</option>
+    <option value="5" >5 Year</option>
+    <option value="10" >10 Year</option>
     <option  value="Duration" disabled selected>Duration</option>
 </select><BR>
 <button id="apply"><i class="fa fa-check" aria-hidden="true"></i></button>
@@ -266,14 +269,36 @@ if(sel2 === "2"){
 
 }
 if(sel2 === "3"){
-    var ans=amount /24;
+    var ans=amount /36;
     var ans1=amount * rate/100;
     document.getElementById("monthpay").value=ans.toFixed(1) 
       document.getElementById("pa").value=" 3 Years"
     document.getElementById("intpay").value=ans1.toFixed(1)
 
-}
+}if(sel2 === "4"){
+    var ans=amount /48;
+    var ans1=amount * rate/100;
+    document.getElementById("monthpay").value=ans.toFixed(1) 
+      document.getElementById("pa").value=" 4 Years"
+    document.getElementById("intpay").value=ans1.toFixed(1)
 
+}
+if(sel2 === "5"){
+    var ans=amount /60;
+    var ans1=amount * rate/100;
+    document.getElementById("monthpay").value=ans.toFixed(1) 
+      document.getElementById("pa").value=" 5 Years"
+    document.getElementById("intpay").value=ans1.toFixed(1)
+
+}
+if(sel2 === "10"){
+    var ans=amount /24;
+    var ans1=amount * rate/100;
+    document.getElementById("monthpay").value=ans.toFixed(1) 
+      document.getElementById("pa").value=" 10 Years"
+    document.getElementById("intpay").value=ans1.toFixed(1)
+
+}
 })
    </script>
    <script src="app.js"></script>
