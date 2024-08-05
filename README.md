@@ -43,7 +43,16 @@ To use the calculator, simply input the required values and click the "Calculate
 ![image](https://github.com/user-attachments/assets/1ad20eea-ce44-4027-8320-18c7a77c6f80)
 
 Once the form is filled out and the "Calculate" button is clicked, the results will be displayed, including the loan type, monthly payment, loan duration, and interest payment.
+# Fasih-Nasir's Project Showcase 🎇📌
 
+
+
+### Home Page
+
+The home page showcases my top-rated projects. Users can navigate through different categories of projects using a dropdown menu and search bar. Each project is displayed with an image, title, and a link to view the live demo.
+
+![image](https://github.com/user-attachments/assets/59ff1785-18a4-4f93-b23a-f111a944f97a) 
+- 👨‍💻 All of my projects are available at [https://fasih-nasirall.netlify.app/]
 
 - 👨‍💻 All of my projects are available at [https://fasih-nasirall.netlify.app/]
 
